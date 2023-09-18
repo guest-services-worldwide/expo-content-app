@@ -154,7 +154,7 @@ $(document).ready(function ()
     </div>
 </template>
 
-<style>
+<style scoped>
 .number:nth-child(1) {
     transform: rotateZ(9.72972973deg);
 }

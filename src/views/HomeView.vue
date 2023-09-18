@@ -1,5 +1,6 @@
 <script setup>
 import {LocalBaseStore} from "@/LocalBaseStore";
+// import RouletteWheel from "@/components/RouletteWheel.vue";
 import {ref} from "vue";
 
 const db = new LocalBaseStore('app');
@@ -24,11 +25,13 @@ const store = () => {
         completed.value = true;
         inputName.value = null;
         inputEmail.value = null;
-        /* eslint-disable no-console */
-        // import('../components/RouletteWheel.vue').then(view => {
-        //     wheel.value = view.default;
-        // })
     });
+}
+
+const download = async () => {
+    const contacts = await db.get('contacts');
+
+    console.log(contacts);
 }
 
 const clear = () => {
@@ -51,11 +54,15 @@ const clear = () => {
                   Spin the roulette wheel to win a prize
               </h3>
               <div class="mt-4">
+<!--                  <RouletteWheel />-->
 <!--                  <component :is="wheel"></component>-->
-                  <iframe width="800" height="800" src="/roulettewheel.html?v=2000" class="mx-auto"></iframe>
+                  <iframe width="800" height="800" src="roulettewheel.html?v=2000" class="mx-auto"></iframe>
               </div>
               <button type="button" @click="clear" class="mt-28">
                   Clear
+              </button>
+              <button type="button" @click="download" class="mt-28">
+                  Download
               </button>
           </div>
           <div class="mt-28" v-else>

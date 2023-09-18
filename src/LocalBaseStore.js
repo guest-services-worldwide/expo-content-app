@@ -11,6 +11,6 @@ export class LocalBaseStore
     }
 
     async get(collection){
-        return await this.db.collection(collection);
+        return await this.db.collection(collection).get();
     }
 }

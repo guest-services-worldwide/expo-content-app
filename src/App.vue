@@ -3,6 +3,15 @@
 </template>
 
 <style>
+html {
+    background: url("assets/roulette-table.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    max-width: 1080px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
