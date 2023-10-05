@@ -1,10 +1,12 @@
 <template>
-  <router-view/>
+    <Suspense>
+        <router-view/>
+    </Suspense>
 </template>
 
 <style>
 html {
-    background: url("assets/roulette-table.png");
+    background: url("assets/background-roulette.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

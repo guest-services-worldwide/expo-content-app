@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.ttf");
+}
+
+* {
+    font-family: "Century Gothic" !important;
+}
 .mx-auto {
     margin: 0 auto;
 }
@@ -39,6 +47,15 @@ blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
+}
+.btn-primary {
+    padding: 20px 60px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase !important;
+    color: #ffffff;
+    background-color: #000000 !important;
+    font-size: 32px;
 }
 table {
     border-collapse: collapse;
@@ -191,8 +208,8 @@ table {
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0, radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px, linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsl(0, 0%, 0%) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0, linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsl(0, 0%, 0%) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
-    background-color: #300;
+    /*background: radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0, radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0, radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0, radial-gradient(hsl(0, 100%, 20%) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0, radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px, linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsl(0, 0%, 0%) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0, linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsl(0, 0%, 0%) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;*/
+    /*background-color: #300;*/
     background-size: 100px 100px;
 }
 .main {
@@ -724,18 +741,28 @@ body {
     line-height: 1;
 }
 .previous-results {
-    max-width: 350px;
-    margin: 24px 12px;
+    max-width: 450px;
+    margin: 54px 12px;
 }
 .previous-list {
     -webkit-perspective: 2000;
     perspective: 2000;
 }
 .previous-result {
-    display: flex;
+    /*display: flex;*/
     margin: 1px;
-    padding: 12px;
+    padding: 25px;
     color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+.previous-result h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.previous-result p {
+    line-height: 40px;
 }
 .previous-result:first-child {
     -webkit-animation: flipin 0.48s ease-out;

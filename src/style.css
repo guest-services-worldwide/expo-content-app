@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("assets/fonts/CenturyGothic.ttf");
+}
+
+* {
+    font-family: "Century Gothic";
+}
+
+.btn-primary {
+    text-transform: uppercase !important;
+    color: #ffffff;
+    background-color: #000000 !important;
+    border-radius: 8px;
+    font-size: 32px;
+}
+label {
+    font-weight: bold;
+    font-size: 42px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+input {
+    height: 95px;
+    font-size: 30px;
+}
+.btn-do-not-push {
+    text-transform: uppercase !important;
+    color: #ffffff;
+    background-color: #ff0000 !important;
+    font-size: 16px;
+    padding: 23px 24px !important;
+    border-radius: 600px !important;
+}

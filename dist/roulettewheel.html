@@ -8,8 +8,9 @@
 </head>
 <body>
 <div class="main">
-    <button type="button" class="btn" id="spin"><span class="btn-label">Spin</span></button>
-    <button type="button" class="btn btn-reset" id="reset"><span class="btn-label">New Game</span></button>
+    <div class="text-center" style="text-align: center;margin-bottom: 50px;">
+        <button type="button" class="btn-primary btn-spin text-center" id="spin"><span class="btn-label">Spin to win</span></button>
+    </div>
     <div class="plate" id="plate">
         <ul class="inner">
             <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit">32</span></label></li>
@@ -69,12 +70,11 @@
 <script src='js/jquery.min.js'></script>
 <script src='js/script.js'></script>
 <script src='js/hammer.min.js'></script>
-<script src='js/roulettewheel.js'></script>
+<script src='js/prizes.js'></script>
 <script>
-    const currentUrl = window.location.href;
-    console.log(currentUrl);
-    const query = getQueryParams(currentUrl);
-    console.log(query);
+    // const currentUrl = window.location.href;
+    // const query = getQueryParams(currentUrl);
 </script>
+<script src='js/roulettewheel.js'></script>
 </body>
 </html>
